@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup_styles.css">
+    <title>Sign Up - Arvista</title>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <form id="signupForm" onsubmit="return validateForm()">
+            <label for="profilePicture">Profile Picture (JPG or PNG):</label>
+            <input type="file" id="profilePicture" name="profilePicture" accept=".jpg, .jpeg, .png" required>
+            <div id="profilePictureError" class="error"></div>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <div id="nameError" class="error"></div>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <div id="dobError" class="error"></div>
+
+            <label>Gender:</label>
+<div id="genderError" class="error"></div>
+<div class="gender-radios">
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="other">
+    <label for="other">Other</label>
+</div>
+
+
+
+            <label for="Country">Country:</label>
+            <select id="Country" name="Country" required>
+                <option value="">Select Country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Korea">Korea</option>
+            </select>
+            <div id="countryError" class="error"></div>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <div id="phoneError" class="error"></div>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div id="emailError" class="error"></div>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div id="passwordError" class="error"></div>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <script>
+    function validateForm() {
+        var isValid = true;
+
+        // Validate profile picture
+        var profilePictureInput = document.getElementById('profilePicture');
+        if (profilePictureInput.files.length === 0) {
+            alert('Please upload a profile picture.');
+            isValid = false;
+        }
+
+        // Validate name
+        var nameInput = document.getElementById('name');
+        if (nameInput.value.trim() === '') {
+            alert('Name is required.');
+            isValid = false;
+        }
+
+        // Validate date of birth
+        var dobInput = document.getElementById('dob');
+        if (dobInput.value.trim() === '') {
+            alert('Date of Birth is required.');
+            isValid = false;
+        }
+
+        // Validate gender
+        var genderSelect = document.getElementById('gender');
+        if (genderSelect.value === '') {
+            alert('Please select a gender.');
+            isValid = false;
+        }
+
+        // Validate country
+        var countrySelect = document.getElementById('Country');
+        if (countrySelect.value === '') {
+            alert('Please select a country.');
+            isValid = false;
+        }
+
+        // Validate phone number
+        var phoneInput = document.getElementById('phone');
+        if (phoneInput.value.trim() === '') {
+            alert('Phone Number is required.');
+            isValid = false;
+        }
+
+        // Validate email
+        var emailInput = document.getElementById('email');
+        if (emailInput.value.trim() === '' || !isValidEmail(emailInput.value)) {
+            alert('Please enter a valid email address.');
+            isValid = false;
+        }
+
+        // Validate password
+        var passwordInput = document.getElementById('password');
+        if (passwordInput.value.trim() === '') {
+            alert('Password is required.');
+            isValid = false;
+        }
+
+        return isValid;
+    }
+
+    function isValidEmail(email) {
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+</script>
+
+</body>
+</html>

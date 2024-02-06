@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('OIG4.jpg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    color: rgb(229, 183, 226); /* Text color */
+}
+
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-family: 'NOSIFER', sans-serif;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgba(10,10,10,10); /* Adjust values as needed */
+}
+
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px; /* Adjust the value to control the roundness of the edges */
+}
+
+.get-started {
+    background-color: #e523b8; /* Choose your desired color */
+    color: rgb(236, 236, 236);
+}
+
+.learn-more {
+    background-color: #a416e6; /* Choose your desired color */
+    color: white;
+}

@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Changed height to min-height */
+    overflow: auto; /* Allow scrolling if content exceeds viewport */
+}
+
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('OIG4\ \(2\).jpg') center/cover no-repeat; /* Replace with your actual image path */
+    z-index: -1;
+}
+
+.container {
+    background-color: rgba(241, 131, 235, 0.671);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(203, 38, 184, 0.433);
+    padding: 20px;
+    text-align: center;
+    max-width: 500px; 
+    /* Adjust the maximum width as needed */
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 20px; /* Added margin for better spacing */
+
+}
+
+
+
+form {
+    max-width: 400px;
+    width: 100%;
+   
+    margin: 0 auto; /* Center the form */
+    box-sizing: border-box;
+
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #91f7f7;
+}
+
+input,
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #d83296;
+    border-radius: 5px;
+    background-color: #df99dc;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #c81282;
+    color: #afee75;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #aa16cf;
+}
+.gender-radios {
+    display: flex;
+    gap: 10px; /* Adjust spacing between radio buttons */
+}
+
+.gender-radios input[type="radio"] {
+    width: auto; /* Adjust radio button width */
+    margin-right: 5px; /* Adjust spacing between radio buttons and labels */
+}

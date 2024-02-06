@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="second_page_styles.css">
+    <title>Arvista - Discover and Share Your Art</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-partition">
+            <!-- Left partition content (Sign In form and image) -->
+             <!-- Replace with your actual image path -->
+            <form>
+                <!-- Sign In form -->
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" onclick="signIn()">Sign In</button>
+            </form>
+        </div>
+        <div class="right-partition">
+            <!-- Right partition content -->
+            <h2>ARTVISTA</h2>
+            <p>Discover and share your art with the world.</p>
+            <div class="options">
+                <a href="#" class="sign-in-btn" onclick="alertSignIn()">Sign In</a>
+                
+                <a href="sign_up.html" class="sign-up-btn">Sign Up</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function alertSignIn() {
+            alert("Please sign in on the left partition.");
+        }
+        
+        function signIn() {
+            // You can add functionality to handle the actual sign-in process here
+        }
+    </script>
+</body>
+</html>

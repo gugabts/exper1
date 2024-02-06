@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.left-partition {
+    flex: 1;
+    background: url('OIG4\ \(3\).jpg') center/cover no-repeat; /* Replace with your actual image path */
+    color: white; /* Text color */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-partition form {
+    max-width: 300px; /* Adjust the maximum width of the form as needed */
+    width: 100%;
+    text-align: center;
+    background: rgba(130, 5, 139, 0.582); /* Form background color with transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(96, 14, 86, 0.611); /* Form box shadow */
+}
+
+.left-partition label {
+    display: block;
+    margin-bottom: 10px;
+    color: #ecf0f1; /* Label text color */
+    font-size: 14px;
+}
+
+.left-partition input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #df1ae2; /* Input border color */
+    border-radius: 5px; /* Input border radius */
+    background-color: rgba(164, 27, 180, 0.542); /* Input background color with transparency */
+    color: white; /* Input text color */
+    font-size: 14px;
+}
+
+.left-partition button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d61fdc; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.left-partition button:hover {
+    background-color: #d014ab; /* Button background color on hover */
+}
+
+
+
+.right-partition {
+    flex: 1;
+    background-color: #b110b1; /* Replace with your desired background color */
+    color: rgb(55, 207, 221); /* Text color */
+    font-family: 'NOSIFER', sans-serif;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(105, 3, 96, 0.2); /* Right partition box shadow */
+}
+
+.right-partition h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px; /* Adjust the font size as needed */
+    margin-bottom: 20px;
+}
+
+.right-partition p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.options a {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(232, 147, 243);
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.options a:hover {
+    background-color: #db2dc4; /* Hover background color */
+}
